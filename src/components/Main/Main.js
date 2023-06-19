@@ -28,7 +28,7 @@ function Main({ errors, onChange, isValid, setValues, setIsValid }) {
                 </div>
             </section>
             <section className="intro-form content__intro-form">
-                <form>
+                <form id="intro-form">
                     <fieldset className="input-set">
                         <h2 className="input-label intro-form__input-label">Номер телефона</h2>
                         <InputMask

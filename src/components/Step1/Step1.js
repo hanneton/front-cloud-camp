@@ -7,12 +7,6 @@ function Step1({ onChange, errors, isValid, setValues, setIsValid }) {
     const navigate = useNavigate();
     const userInfo = useContext(CurrentUserContext);
 
-    console.log(isValid)
-
-    useEffect(() => {
-        setValues({ ...userInfo })
-    }, []);
-
     const handleBackClick = () => {
         navigate('/')
     }
@@ -35,7 +29,7 @@ function Step1({ onChange, errors, isValid, setValues, setIsValid }) {
                 <span className="progress-bar__num">2</span>
                 <span className="progress-bar__num">3</span>
             </div>
-            <form className="stepform">
+            <form id="stepform-1-form" className="stepform">
                 <fieldset className="input-set">
                     <h2 className="input-label stepform__input-label">Nickname</h2>
                     <input
@@ -77,7 +71,7 @@ function Step1({ onChange, errors, isValid, setValues, setIsValid }) {
                 <fieldset className="input-set">
                     <h2 className="input-label stepform__input-label">Sex</h2>
                     <div className="select-container">
-                        <select name="sex" onChange={onChange} className="input stepform__input" defaultValue="Не выбрано">
+                        <select required name="sex" onChange={onChange} className="input stepform__input" defaultValue="Не выбрано">
                             <option className="input__option" disabled value="Не выбрано">Не выбрано</option>
                             <option className="input__option" value="man">man</option>
                             <option className="input__option" value="woman">woman</option>

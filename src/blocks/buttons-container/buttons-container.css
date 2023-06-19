@@ -2,4 +2,5 @@
     display: flex;
     margin-top: 88px;
     justify-content: space-between;
+    align-items: center;
 }

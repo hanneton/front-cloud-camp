@@ -27,7 +27,7 @@ function Step3({ onChange, onSubmit }) {
                 <span className="progress-bar__num progress-bar__num_active">2</span>
                 <span className="progress-bar__num progress-bar__num_active">3</span>
             </div>
-            <form onSubmit={onSubmit} id="stepform" className="stepform">
+            <form id="stepform-3-form" onSubmit={onSubmit} id="stepform" className="stepform">
                 <h2 className="input-label stepform__input-label">About</h2>
                 <textarea onChange={onChange} value={userInfo["about"]} maxLength={200} name="about" className="stepform__textarea"></textarea>
             </form>

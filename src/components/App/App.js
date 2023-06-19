@@ -23,6 +23,9 @@ function App() {
     "radio": 0,
     "checkbox": [],
     "about": "",
+    "stepform-2-form": false,
+    "stepform-1-form": false,
+    "stepform-3-form": false
   })
 
   const [isTooltipPopupOpen, setTooltipPopupOpen] = useState(false);

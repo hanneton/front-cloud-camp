@@ -68,7 +68,7 @@ function Step2({ onChange, setValues }) {
                 <span className="progress-bar__num progress-bar__num_active">2</span>
                 <span className="progress-bar__num">3</span>
             </div>
-            <form className="stepform">
+            <form id="stepform-2-form" className="stepform">
                 <h2 className="input-label stepform__input-label">Advantages</h2>
                 <fieldset className="input-set">
                     {advantages.map((advantage, index) => {
@@ -96,9 +96,9 @@ function Step2({ onChange, setValues }) {
                 </fieldset>
                 <h2 className="input-label stepform__input-label">Radio group</h2>
                 <fieldset className="radio-set">
-                    <label className="checkbox-set__label"><input checked={userInfo["radio"] === "1" || ""} onChange={onChange} value={1} name="radio" className="radio-set__item" type="radio"></input>1</label>
-                    <label className="checkbox-set__label"><input checked={userInfo["radio"] === "2" || ""} onChange={onChange} value={2} name="radio" className="radio-set__item" type="radio"></input>2</label>
-                    <label className="checkbox-set__label"><input checked={userInfo["radio"] === "3" || ""} onChange={onChange} value={3} name="radio" className="radio-set__item" type="radio"></input>3</label>
+                    <label className="checkbox-set__label"><input required checked={userInfo["radio"] === "1" || ""} onChange={onChange} value={1} name="radio" className="radio-set__item" type="radio"></input>1</label>
+                    <label className="checkbox-set__label"><input required checked={userInfo["radio"] === "2" || ""} onChange={onChange} value={2} name="radio" className="radio-set__item" type="radio"></input>2</label>
+                    <label className="checkbox-set__label"><input required checked={userInfo["radio"] === "3" || ""} onChange={onChange} value={3} name="radio" className="radio-set__item" type="radio"></input>3</label>
                 </fieldset>
             </form>
             <div className="buttons-container">
