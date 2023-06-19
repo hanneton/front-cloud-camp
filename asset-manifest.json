@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/hanneton.github.io/static/css/main.b21f75b8.css",
+    "main.js": "/hanneton.github.io/static/js/main.16950c5a.js",
+    "static/media/errorIcon.svg": "/hanneton.github.io/static/media/errorIcon.fd1a8448dacc4a5af170.svg",
+    "static/media/folder-icon.svg": "/hanneton.github.io/static/media/folder-icon.adb28c1ea5c60bdbecf7.svg",
+    "static/media/trash-icon.svg": "/hanneton.github.io/static/media/trash-icon.0b7210805511d12fdfeb.svg",
+    "static/media/successIcon.svg": "/hanneton.github.io/static/media/successIcon.a20946ae27d9e9492ba1.svg",
+    "index.html": "/hanneton.github.io/index.html",
+    "static/media/close-icon.svg": "/hanneton.github.io/static/media/close-icon.12697ca38f724dc86c5f.svg",
+    "static/media/checkmark.svg": "/hanneton.github.io/static/media/checkmark.501987ca8dd4487a7609.svg",
+    "static/media/chevron-down.svg": "/hanneton.github.io/static/media/chevron-down.0870ce7459c69efbcf10.svg",
+    "static/media/add-icon.svg": "/hanneton.github.io/static/media/add-icon.f42cf42545107d658654.svg",
+    "main.b21f75b8.css.map": "/hanneton.github.io/static/css/main.b21f75b8.css.map",
+    "main.16950c5a.js.map": "/hanneton.github.io/static/js/main.16950c5a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b21f75b8.css",
+    "static/js/main.16950c5a.js"
+  ]
+}
