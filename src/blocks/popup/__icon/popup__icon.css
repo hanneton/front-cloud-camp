@@ -1,0 +1,23 @@
+.popup__icon {
+    position: relative;
+    margin: 70px auto 70px;
+    width: 38.4px;
+    height: 38.4px;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../../../images/errorIcon.svg);
+}
+
+.popup__icon:before {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    content: "";
+    background-color: #E84E58;
+    opacity: 15%;
+}

@@ -1,0 +1,7 @@
+.progress-bar__point {
+    width: 16px;
+    height: 16px;
+    background-color: #A6A6A6;
+    border-radius: 50%;
+    position: relative;
+}

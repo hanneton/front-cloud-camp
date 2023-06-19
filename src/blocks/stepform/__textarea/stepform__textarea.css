@@ -1,0 +1,6 @@
+.stepform__textarea {
+    max-width: 680px;
+    width: 100%;
+    height: 84px;
+    resize: none;
+}

@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url(./vendor/normalize.css);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url(./blocks/page/page.css);
+@import url(./blocks/content/content.css);
+@import url(./blocks/user-profile/user-profile.css);
+@import url(./blocks/progress-bar/progress-bar.css);
+@import url(./blocks/input/input.css);
+@import url(./blocks/input-label/input-label.css);
+@import url(./blocks/input/__option/input__option.css);
+@import url(./blocks/stepform/stepform.css);
+@import url(./blocks/input-set/input-set.css);
+@import url(./blocks/radio-set/radio-set.css);
+@import url(./blocks/radio-set/__item/radio-set__item.css);
+@import url(./blocks/checkbox/checkbox-set.css);
+@import url(./blocks/checkbox/__label/checkbox-set__label.css);
+@import url(./blocks/checkbox/__item/checkbox__item.css);
+@import url(./blocks/tip/tip.css);
+@import url(./blocks/button/button.css);
+@import url(./blocks/select-container/select-container.css);
+@import url(./blocks/button/_back/button_back.css);
+@import url(./blocks/step-page/step-page.css);
+@import url(./blocks/buttons-container/buttons-container.css);
+@import url(./blocks/stepform/__input-label/stepform__input-label.css);
+@import url(./blocks/content/__user-profile/content__user-profile.css);
+@import url(./blocks/user-profile/__avatar/user-profile__avatar.css);
+@import url(./blocks/user-profile/__info/user-profile__info.css);
+@import url(./blocks/user-profile/__link/user-profile__link.css);
+@import url(./blocks/user-profile/__links/user-profile__links.css);
+@import url(./blocks/user-profile/__name/user-profile__name.css);
+@import url(./blocks/content/__intro-form/content__intro-form.css);
+@import url(./blocks/stepform/__input/stepform__input.css);
+@import url(./blocks/intro-form/intro-form.css);
+@import url(./blocks/intro-form/__input/intro-form__input.css);
+@import url(./blocks/intro-form/__input-label/intro-form__input-label.css);
+@import url(./blocks/intro-form/__button/intro-form__button.css);
+@import url(./blocks/progress-bar/__point/progress-bar__point.css);
+@import url(./blocks/progress-bar/__point/_active/progress-bar__point_active.css);
+@import url(./blocks/progress-bar/__num/progress-bar__num.css);
+@import url(./blocks/progress-bar/__num/_active/progress-bar__num_active.css);
+
+@import url(./blocks/progress-bar/__steps/progress-bar__steps.css);
+@import url(./blocks/progress-bar/_1/progress-bar_1.css);
+@import url(./blocks/progress-bar/_2/progress-bar_2.css);
+@import url(./blocks/intro-page/intro-page.css);
+@import url(./blocks/progress-bar/__point/_blue/progress-bar__point_blue.css);
+@import url(./blocks/progress-bar/__point/_checkmark/progress-bar__point_checkmark.css);
+@import url(./blocks/add-button/add-button.css);
+@import url(./blocks/remove-button/remove-button.css);
+@import url(./blocks/input-container/input-container.css);
+@import url(./blocks/stepform/__textarea/stepform__textarea.css);
+@import url(./blocks/tip/_active/tip_active.css);
+@import url(./blocks/button/_inactive/button_inactive.css);
+@import url(./blocks/popup/popup.css);
+@import url(./blocks/popup/_opened/popup_opened.css);
+@import url(./blocks/popup/__container/popup__container.css);
+@import url(./blocks/popup/__icon/popup__icon.css);
+@import url(./blocks/popup/__icon/_success/popup__icon_success.css);
+@import url(./blocks/popup/__heading/popup__heading.css);
+@import url(./blocks/popup/__close-button/popup__close-button.css);
+@import url(./blocks/popup/__button/popup__button.css);
+@import url(./blocks/popup/__heading/_error/popup__heading_error.css);
+@import url(./blocks/popup/__wrapper/popup__wrapper.css);
+@import url(./blocks/popup/__button/_close/popup__button_close.css);

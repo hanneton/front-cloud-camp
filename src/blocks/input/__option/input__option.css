@@ -1,0 +1,7 @@
+.input__option {
+    color: #000;
+}
+
+.input__option:first-child {
+    display: none;
+}

@@ -1,0 +1,7 @@
+.checkbox-set {
+    border: 0;
+    padding: 0;
+    margin: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+}

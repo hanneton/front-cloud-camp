@@ -1,0 +1,12 @@
+.remove-button {
+    background-image: url(../../images/trash-icon.svg);
+    border: 0;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #fff;
+    margin-left: 18.5px;
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.page {
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #F4F4F5;
+}

@@ -1,0 +1,9 @@
+.content {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: calc(100% - 24px);
+    max-width: 900px;
+    min-height: 704px;
+    margin: 25px auto 0;
+    background-color: #fff;
+}

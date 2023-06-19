@@ -1,0 +1,20 @@
+.user-profile__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #5558FA;
+    position: relative;
+    padding-left: calc(12.8px + 5.6px);
+}
+
+.user-profile__link:before {
+    position: absolute;
+    content: url(../../../images/folder-icon.svg);
+    width: 12.8px;
+    height: 11.2px;
+    top: 0;
+    left: 0;
+}
+
+.user-profile__link:not(:last-of-type) {
+    margin-right: 18px;
+}

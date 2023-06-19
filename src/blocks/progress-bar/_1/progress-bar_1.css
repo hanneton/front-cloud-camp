@@ -1,0 +1,11 @@
+.progress-bar_1::before {
+    content: "";
+    width: 50%;
+    max-width: 680px;
+    height: 8px;
+    background-color: #5558FA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}

@@ -1,0 +1,6 @@
+.intro-form__input {
+    padding: 12px;
+
+}
+
+.intro-form__input:last-of-type {}
