@@ -20,3 +20,11 @@ export default function useFormAndValidation(inputValues = {}) {
 
   return { values, handleChange, errors, setErrors, isValid, resetForm, setValues, setIsValid };
 }
+
+// (event) => setEmail(event.target.value, () => {
+//   if (event.target.checkValidity()) {
+//     setButtonDisabled(false);
+//   } else {
+//     setButtonDisabled(true);
+//   }
+// })

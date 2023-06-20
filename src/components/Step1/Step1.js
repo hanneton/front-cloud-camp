@@ -7,6 +7,10 @@ function Step1({ onChange, errors, isValid, setValues, setIsValid }) {
     const navigate = useNavigate();
     const userInfo = useContext(CurrentUserContext);
 
+    useEffect(() => {
+        setIsValid(document.querySelector("form").checkValidity());
+    }, []);
+
     const handleBackClick = () => {
         navigate('/')
     }

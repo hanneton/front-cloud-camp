@@ -4,8 +4,10 @@ import InputMask from 'react-input-mask';
 import { useContext, useEffect } from "react";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 
-function Main({ errors, onChange, isValid, setValues, setIsValid }) {
-
+function Main({ errors, values, onChange, isValid, setValues, setIsValid }) {
+    useEffect(() => {
+        setIsValid(document.querySelector("form").checkValidity());
+    }, [])
     const userInfo = useContext(CurrentUserContext);
 
     const navigate = useNavigate();
@@ -33,7 +35,7 @@ function Main({ errors, onChange, isValid, setValues, setIsValid }) {
                         <h2 className="input-label intro-form__input-label">Номер телефона</h2>
                         <InputMask
                             onChange={onChange}
-                            value={userInfo["phone-number"]}
+                            value={values["phone-number"]}
                             required
                             className="input intro-form__input"
                             name="phone-number"
@@ -50,7 +52,7 @@ function Main({ errors, onChange, isValid, setValues, setIsValid }) {
                             type="email"
                             className="input intro-form__input"
                             placeholder="tim.jennings@example.com"
-                            value={userInfo["email"]}
+                            value={values["email"]}
                             onChange={onChange}
                             name="email"
                         />

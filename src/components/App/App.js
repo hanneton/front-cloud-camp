@@ -65,7 +65,7 @@ function App() {
         <main className="content">
           <CurrentUserContext.Provider value={values}>
             <Routes>
-              <Route index element={<Main setErrors={setErrors} setValues={setValues} setIsValid={setIsValid} isValid={isValid} onChange={handleChange} errors={errors} />} />
+              <Route index element={<Main setErrors={setErrors} values={values} setValues={setValues} setIsValid={setIsValid} isValid={isValid} onChange={handleChange} errors={errors} />} />
               <Route path="/create" element={<Step1 setErrors={setErrors} setIsValid={setIsValid} isValid={isValid} setValues={setValues} onChange={handleChange} errors={errors} />} />
               <Route path="/create/step-2" element={<Step2 setErrors={setErrors} setValues={setValues} onChange={handleChange} errors={errors} />} />
               <Route path="/create/step-3" element={<Step3 setErrors={setErrors} onSubmit={handleSubmit} onChange={handleChange} errors={errors} />} />
