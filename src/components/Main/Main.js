@@ -4,10 +4,8 @@ import InputMask from 'react-input-mask';
 import { useContext, useEffect } from "react";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 
-function Main({ errors, values, onChange, isValid, setValues, setIsValid }) {
-    useEffect(() => {
-        setIsValid(document.querySelector("form").checkValidity());
-    }, [])
+function Main({ errors, onChange, formValidities }) {
+
     const userInfo = useContext(CurrentUserContext);
 
     const navigate = useNavigate();
@@ -35,7 +33,7 @@ function Main({ errors, values, onChange, isValid, setValues, setIsValid }) {
                         <h2 className="input-label intro-form__input-label">Номер телефона</h2>
                         <InputMask
                             onChange={onChange}
-                            value={values["phone-number"]}
+                            value={userInfo["phone-number"]}
                             required
                             className="input intro-form__input"
                             name="phone-number"
@@ -52,7 +50,7 @@ function Main({ errors, values, onChange, isValid, setValues, setIsValid }) {
                             type="email"
                             className="input intro-form__input"
                             placeholder="tim.jennings@example.com"
-                            value={values["email"]}
+                            value={userInfo["email"]}
                             onChange={onChange}
                             name="email"
                         />
@@ -60,7 +58,7 @@ function Main({ errors, values, onChange, isValid, setValues, setIsValid }) {
                     </fieldset>
 
                 </form>
-                <button disabled={isValid ? false : true} onClick={handleClick} className={`button intro-form__button ${!isValid && 'button_inactive'}`}>Начать</button>
+                <button disabled={formValidities["intro-form"] ? false : true} onClick={handleClick} className={`button intro-form__button ${!formValidities["intro-form"] && 'button_inactive'}`}>Начать</button>
             </section>
         </div>
     )

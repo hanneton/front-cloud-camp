@@ -12,7 +12,7 @@ import { InfoTooltip } from '../InfoTooltip/InfoTooltip';
 
 
 function App() {
-  const { values, handleChange, errors, isValid, setErrors, setValues, setIsValid } = useFormAndValidation({
+  const { values, handleChange, errors, isValid, setErrors, setValues, setIsValid, formValidities } = useFormAndValidation({
     "name": "",
     "surname": "",
     "nickname": "",
@@ -22,15 +22,11 @@ function App() {
     "advantages": ["", "", ""],
     "radio": 0,
     "checkbox": [],
-    "about": "",
-    "stepform-2-form": false,
-    "stepform-1-form": false,
-    "stepform-3-form": false
+    "about": ""
   })
 
   const [isTooltipPopupOpen, setTooltipPopupOpen] = useState(false);
   const [tooltipIcon, setTooltipIcon] = useState(false);
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -65,8 +61,8 @@ function App() {
         <main className="content">
           <CurrentUserContext.Provider value={values}>
             <Routes>
-              <Route index element={<Main setErrors={setErrors} values={values} setValues={setValues} setIsValid={setIsValid} isValid={isValid} onChange={handleChange} errors={errors} />} />
-              <Route path="/create" element={<Step1 setErrors={setErrors} setIsValid={setIsValid} isValid={isValid} setValues={setValues} onChange={handleChange} errors={errors} />} />
+              <Route index element={<Main formValidities={formValidities} onChange={handleChange} errors={errors} />} />
+              <Route path="/create" element={<Step1 formValidities={formValidities} setValues={setValues} onChange={handleChange} errors={errors} />} />
               <Route path="/create/step-2" element={<Step2 setErrors={setErrors} setValues={setValues} onChange={handleChange} errors={errors} />} />
               <Route path="/create/step-3" element={<Step3 setErrors={setErrors} onSubmit={handleSubmit} onChange={handleChange} errors={errors} />} />
             </Routes>

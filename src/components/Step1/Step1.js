@@ -3,13 +3,9 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 import useFormAndValidation from "../../hooks/useFormAndValidation";
 
-function Step1({ onChange, errors, isValid, setValues, setIsValid }) {
+function Step1({ onChange, errors, formValidities }) {
     const navigate = useNavigate();
     const userInfo = useContext(CurrentUserContext);
-
-    useEffect(() => {
-        setIsValid(document.querySelector("form").checkValidity());
-    }, []);
 
     const handleBackClick = () => {
         navigate('/')
@@ -86,7 +82,7 @@ function Step1({ onChange, errors, isValid, setValues, setIsValid }) {
             </form>
             <div className="buttons-container">
                 <button onClick={handleBackClick} className="button button_back">Назад</button>
-                <button disabled={isValid ? null : true} onClick={handleNextClick} className={`button intro-form__button ${!isValid && 'button_inactive'}`}>Далее</button>
+                <button disabled={formValidities["stepform-1-form"] ? null : true} onClick={handleNextClick} className={`button intro-form__button ${!formValidities["stepform-1-form"] && 'button_inactive'}`}>Далее</button>
             </div>
         </div >
     )
